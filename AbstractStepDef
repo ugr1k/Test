@@ -1,0 +1,12 @@
+package runner;
+
+import PropertyLoaders.PropertyLoader;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+public class AbstractStepDef {
+    protected static RemoteWebDriver driverManager;
+    protected static WebDriver driver;
+    protected static String chromeDriver = PropertyLoader.loader("chromeDriver");
+    protected static String homePageUrl = PropertyLoader.loader("homePageUrl");
+}
